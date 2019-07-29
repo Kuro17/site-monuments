@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- HEAD -->
+    <head lang="fr">
+        <title>Bienvenue sur les monuments de Paris en fête !</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Roboto:400,400i,700,700i|Tinos:400,400i,700,700i&display=swap" rel="stylesheet">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="ressources/css/style.css">
+    </head>
+
+
+    <!-- BODY --> 
+    <body>
+        <!-- HEADER -->
+        <header>
+
+            <!-- HEADER VIOLET NAVIGATION -->
+            <nav class="navbar navbar-expand-md bg-violet navbar-light fixed-top">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#monmenu"
+                                aria-controls="monmenu"
+                                aria-expanded="false"
+                                aria-label="Mon menu mobile">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="monmenu">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-item btn btn-nav" href="index.html">Accueil</a>
+                                <a class="nav-item btn btn-nav" href="application-mobile.htm">Application mobile</a>
+                                <a class="nav-item btn btn-nav" href="louvre.htm">Monuments</a>
+                                <a class="nav-item btn btn-nav" href="preparez-votre-visite.htm">Préparez votre visite</a>
+                                <a class="nav-item btn btn-nav" href="programme.htm">Programme</a>
+                                <a class="nav-item btn btn-nav" href="billets.htm">Billets</a>
+                                <a class="nav-item btn btn-nav" href="press.htm">Espace Press</a>
+                                <a class="nav-item btn btn-nav" href="#">Produits dérivés</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+            <!-- HEADER JAUNE LOGO + TITRE -->
+                <div class="row-jaune">
+                    <div class="logo"><img src="ressources/images/header/logo-monuments-de-paris-en-fete.png" width="100%" alt="logo les monuments de Paris en fête"></div> 
+
+                    <div class="logo-titre">  
+                        <h1>Les monuments de Paris en fête !</h1>
+                        <h2>Une journée pour tous les découvrir</h2>
+                    </div>
+
+                    
+                </div>
+
+            <!-- HEADER SLIDE 
+                <div class="row-slide">
+                  <div class="fond-titre-slide"><h1>Achetez votre pass à la journée ou la demi-journée</h1></div>
+                  <div><a href="/" class="btn btn-slide">Achetez votre billet</a></div>
+                </div>
+                -->
+
+            <!-- HEADER CAROUSEL (4 slides) BOOTSTRAP -->    
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <!-- SLIDE présentation/pass journée -->  
+                    <div class="carousel-item active">
+                      <img src="ressources/images/header/slide-pass-journee.jpg" class="d-block w-100" alt="Slide pass à la journée ou la demie journée">
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="fond-titre-slide"><h1>Achetez votre pass à la journée ou demie journée</h1></div>
+                        <div><p><a href="billets.htm" class="btn btn-slide">Achetez votre billet</a></p></div>
+                      </div>
+                    </div>
+                    <!-- SLIDE monuments --> 
+                    <div class="carousel-item">
+                      <img src="ressources/images/header/slide-monuments.jpg" class="d-block w-100" alt="Slide 10 monuments de Paris à découvrir">
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="fond-titre-slide"><h1>Découvrez 10 monuments en fête</h1></div>
+                        <div><p><a href="billets.htm" class="btn btn-slide">Achetez votre billet</a></p></div>
+                      </div>
+                    </div>
+                    <!-- SLIDE conférence --> 
+                    <div class="carousel-item">
+                      <img src="ressources/images/header/slide-atelier-conference.jpg" class="d-block w-100" alt="Slide des manifestations - Ateliers - Conférence - Table ronde - Expositions">
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="fond-titre-slide"><h1>Participez à nos manifestations : ateliers, expositions...</h1></div>
+                        <div><p><a href="billets.htm" class="btn btn-slide">Achetez votre billet</a></p></div>
+                      </div>
+                    </div>
+                    <!-- SLIDE application mobile --> 
+                    <div class="carousel-item">
+                        <img src="ressources/images/header/slide-application-mobile.jpg" class="d-block w-100" alt="Slide pour découvrir l'application mobile de l'événement des monuments de Paris en fête">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fond-titre-slide"><h1>Téléchargez notre application mobile</h1></div>
+                            <div><p><a href="application-mobile.htm" class="btn btn-slide">Plus d'informations</a></p><a href="https://www.apple.com/fr/ios/app-store/" target=_blank><img src="ressources/images/section-accueil/btn-app-store.png"></a>&nbsp;&nbsp;<a href="https://play.google.com/store" target=_blank><img src="ressources/images/section-accueil/btn-google-play.png"></a></div>
+                        </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+
+        </header>
+
+
+        <!-- SECTION application mobile -->
+        <section>
+
+            <div class="container appli-mob-fond">
+                
+                <div>
+                    <div class="col-md-4">
+                        <div class="appli-mob-details">
+                            <div><img src="ressources/images/section-accueil/application-mobile.jpg" width="100%" alt="Visuel d'une main tenant un portable qui montre une page de l'application mobile de l'événement des monuments de Paris en fête" title="Application mobile des monuments de Paris en fête"></div>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-4">    
+                        <div class="appli-mob-details">
+                            <div><h4>L'application mobile<br>de l'événement !</h4></div>
+                            <div><h6>Accompagnez vos visites avec l’application mobile des monuments de Paris en fête.</h6></div>
+                            <div><p>Vous pourrez définir votre parcours et sélectionner les monuments que vous souhaitez visiter, 
+                                    avoir des informations historiques sur chaque monument et un jeu sur le monument visité où vous 
+                                    pourrez gagner un produit dérivé à retirer au stand des monuments de Paris en fête. Alors 
+                                    n’hésitez plus, <a href="application-mobile.htm" class="link">téléchargez-la !</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="appli-mob-details">
+                            <div><a href="application-mobile.htm" class="btn btn-application-mobile">Plus d'infos</a></div>
+                            <br>
+                            <div class="btn-google-apple"><a href="https://www.apple.com/fr/ios/app-store/" target=_blank><img src="ressources/images/section-accueil/btn-app-store.png" widht="100%" alt="Bouton Apple Store"></a></div>
+                            <br>
+                            <div class="btn-google-apple"><a href="https://play.google.com/store" target=_blank><img src="ressources/images/section-accueil/btn-google-play.png" widht="100%" alt="Bouton Google Store"></a></div>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION monuments -->
+        <section>
+        
+            <div class="container">
+
+                <div class="row monuments-fond">
+                    <div class="col-md-12">
+                        <div class="monuments-details ">
+                            <h1 class="titre-monument">10 monuments à visiter le 15 août 2020 !</h1>
+                            <div><h5>Organisez votre journée pour pouvoir découvrir, visiter, jouer et participer aux manifestations</h5></div>
+                            <div><a href="preparez-votre-visite.htm" class="btn btn-preparez-journee">Préparez votre journée</a></div>
+                            <div><img src="ressources/images/cale.png" height="20"></div>
+                            <div><p class="txt-intro-centre"><span class="txt-chapeau">Nous vous proposons <a href="billets.htm">UN PASS pour la journée ou la demi-journée</a>,
+                                <br>
+                                ainsi que ses produits dérivés, <a href="programme.htm">une conférence et une table-ronde</a> à la Mairie de la ville de Paris.
+                                <br>
+                                Pour chaque monument vous aurez un jeu sur l’application mobile, la découverte du monument
+                                 (<a href="application-mobile.htm">complément sur l’application mobile : 
+                                son histoire et faits marquants</a>), son exposition et son atelier.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TR de separation -->
+                <div class="row monuments-fond">
+                    <div class="col-md-12">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" height="40"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TR début CONTENU images LOUVRE + ARC DE TRIOMPHE monument + titre + paragraphe + bouton -->
+                <div class="row monuments-fond">
+                    
+                    <!-- LOUVRE -->
+                    <div class="col-md-3">
+                      <div class="monuments-details">
+                         <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/louvre.jpg" width="86%" alt="Le Louvre (Dessiné par C.M.)" title="Le Louvre (Dessiné par C.M.)"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Le Louvre</h3></div>
+                            <div><p class="largeur-paragraphe">Découvrez le lieu du monument, son histoire, son architecture, ses restaurants, ses magasins, ses expositions, 
+                                son atelier pour enfant « Je dessine comme Ingres » et son exposition et ses produits dérivés.</p>
+                            </div>
+                            <div><a href="louvre.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+
+                    <!-- ARC DE TRIOMPHE -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/arc-de-triomphe.jpg" width="86%" alt="L'Arc de Triomphe (Dessiné par C.M.)" title="L'Arc de Triomphe (Dessiné par C.M.)"></div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>L'Arc de Triomphe</h3></div>
+                            <div>
+                                <p class="largeur-paragraphe">Découvrez le lieu du monument (son musée et sa terrasse panoramique), son histoire, son architecture,
+                                   son atelier pour enfant « Napoleon ce grand bâtisseur », son exposition et ses produits dérivés.
+                                </p>
+                            </div>
+                        <div><a href="arc-de-triomphe.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                    </div>
+                </div> 
+                <!-- TR fin CONTENU LOUVRE + ARC DE TRIOMPHE -->
+                
+                <!-- TR de separation -->
+                <div class="col-md-12">
+                    <div class="row monuments-fond">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" height="40"></div>
+                    </div>
+                </div>
+
+                <!-- TR début CONTENU images JARDIN DES PLANTES + CITÉ DES SCIENCES ET DE L'INDUSTRIE + titre + paragraphe + bouton -->
+                <div class="col-md-12">
+                <div class="row monuments-fond">
+                    
+                    <!-- JARDIN DES PLANTES -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/jardin-des-plantes.jpg" width="86%" alt="Le jardin des plantes (Dessiné par C.M.)" title="Le jardin des plantes (Dessiné par C.M.)"></div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Jardin des<br>plantes</h3></div>
+                            <div><p class="largeur-paragraphe">Découvrez le lieu du monument (jardin et zoo), son histoire, son architecture, ses restaurants, 
+                                son atelier pour enfant « Dessine moi un tigre », son exposition et ses produits dérivés.</p>
+                            </div>
+                            <div><a href="louvre.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+                
+                    <!-- CITÉ DE LA SCIENCE -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/cite-des-sciences.jpg" width="86%" alt="La Cité des Sciences et de l'Industrie (Dessiné par P.P.)" title="La Cité des Sciences et de l'Industrie (Dessiné par P.P.)"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Cité des<br>sciences et de<br>l'industrie</h3></div>
+                            <div>
+                                <p class="largeur-paragraphe">Découvrez le lieu du monument (son parc, ses restaurants...), son histoire, son architecture, 
+                                    son atelier pour enfant « Pilote ton robot » et son exposition...
+                                </p>
+                            </div>
+                            <div><a href="arc-de-triomphe.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <!-- TR fin CONTENU JARDIN DES PLANTES + CITÉ DES SCIENCES ET DE L'INDUSTRIE -->
+
+                <!-- TR de separation -->
+                <div class="col-md-12">
+                    <div class="row monuments-fond">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" height="40"></div>
+                    </div>
+                </div>
+    
+                <!-- TR début CONTENU images PLACE DE LA RÉPUBLIQUE + NOTRE DAME + titre + paragraphe + bouton -->
+                <div class="col-md-12">
+                <div class="row monuments-fond">
+                        
+                    <!-- PLACE DE LA RÉPUBLIQUE -->
+                    <div class="col-md-3">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/place-de-la-republique.jpg" width="86%" alt="La place de la République (Dessiné par L.T.)" title="La place de la République (Dessiné par L.T.)"></div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Place de la<br>République</h3></div>
+                            <div><p class="largeur-paragraphe">Découvrez le lieu du monument (sa place et sa buvette), son histoire, les artistes qui ont réalisé 
+                                la sculpture, son atelier pour enfant   « Modélisation d’une sculpture » et son exposition.</p>
+                            </div>
+                            <div><a href="louvre.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+                    
+                    <!-- NOTRE DAME -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/notre-dame.jpg" width="86%" alt="Notre Dame (Dessiné par C.B.)" title="Notre Dame (Dessiné par C.B.)"></div>
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Notre Dame</h3></div>
+                            <div>
+                                <p class="largeur-paragraphe">Découvrez le lieu du monument, son histoire, son architecture, son atelier pour enfant « Icônes », 
+                                        son exposition inspirée des oeuvres de Malika favre et ses produits dérivés.
+                                </p>
+                            </div>
+                            <div><a href="arc-de-triomphe.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <!-- TR fin CONTENU PLACE DE LA RÉPUBLIQUE + NOTRE DAME -->
+
+                <!-- TR de separation -->
+                <div class="col-md-12">
+                    <div class="row monuments-fond">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" height="40"></div>
+                    </div>
+                </div>
+        
+                <!-- TR début CONTENU images TOUR EIFFEL + MUSÉE D'ORSAY + titre + paragraphe + bouton -->
+                <div class="col-md-12">
+                <div class="row monuments-fond">
+                            
+                    <!-- TOUR EIFFEL -->
+                    <div class="col-md-3">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/tour-eiffel.jpg" width="86%" alt="La Tour Eiffel (Dessiné par S.A.)" title="La Tour Eiffel (Dessiné par S.A.)"></div>
+                    </div>
+                        
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Tour Eiffel</h3></div>
+                            <div><p class="largeur-paragraphe">Découvrez le lieu du monument (son jardin, sa vue imprenable sur Paris...), son histoire, 
+                                son architecture, son atelier « Je construis ma Tour Eiffel », son exposition et ses produits dérivés.</p>
+                            </div>
+                            <div><a href="louvre.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+                        
+                    <!-- MUSÉE D'ORSAY -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/musee-d-orsay.jpg" width="86%" alt="Le Musée d'Orsay (Dessiné par J.G.)" title="Le Musée d'Orsay (Dessiné par J.G.)"></div>
+                        </div>
+                    </div>
+                            
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Le musée d'Orsay</h3></div>
+                            <div>
+                                <p class="largeur-paragraphe">Découvrez le lieu du monument, son histoire, son architecture, son atelier 
+                                    « Je réalise mon tableau sur ordinateur.», son exposition inspirée des oeuvres de Malika Favre et ses produits dérivés.
+                                </p>
+                            </div>
+                            <div><a href="arc-de-triomphe.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+    
+                </div>
+                </div>
+                <!-- TR fin CONTENU TOUR EIFFEL + MUSÉE D'ORSAY -->
+
+                <!-- TR de separation -->
+                <div class="col-md-12">
+                    <div class="row monuments-fond">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" height="40"></div>
+                    </div>
+                </div>
+        
+                <!-- TR début CONTENU images CENTRE GEORGES POMPIDOU + BASILIQUE DU SACRÉ COEUR + titre + paragraphe + bouton -->
+                <div class="col-md-12">
+                <div class="row monuments-fond">
+                            
+                    <!-- CENTRE GEORGES POMPIDOU -->
+                    <div class="col-md-3">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/centre-pompidou.jpg" width="86%" alt="Le Centre Georges Pompidou (Dessiné par V.C.)" title="Le Centre Georges Pompidou (Dessiné par V.C.)"></div>
+                    </div>
+                        
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>Le centre Georges<br>Pompidou</h3></div>
+                            <div><p class="largeur-paragraphe">Découvrez le lieu du monument, son histoire, son architecture, son atelier
+                                « Je pilote mon drône. », son exposition inspirée des oeuvres de Malika Favre et ses produits dérivés.</p>
+                            </div>
+                            <div><a href="louvre.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+                        
+                    <!-- BASILIQUE DU SACRÉ COEUR -->
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><img src="ressources/images/cale.png" width="30"><img src="ressources/images/section-accueil/sacre-coeur.jpg" width="86%" alt="La Basilique du Sacré Cœur (Dessiné par P.M.)" title="La Basilique du Sacré Cœur (Dessiné par P.M.)"></div>
+                        </div>
+                    </div>
+                            
+                    <div class="col-md-3">
+                        <div class="monuments-details">
+                            <div><h3>La Basilique du<br>sacré Cœur</h3></div>
+                            <div>
+                                <p class="largeur-paragraphe">Découvrez le lieu du monument (sa vue dégagée sur Paris...), son histoire, son architecture, 
+                                    son atelier « Le Sacré Coeur en couleurs. », son exposition et ses produits dérivés.
+                                </p>
+                            </div>
+                            <div><a href="arc-de-triomphe.htm" class="btn btn-decouvrir">A découvrir</a></div>
+                        </div>
+                    </div>
+    
+                </div>
+                </div>
+                <!-- TR fin CONTENU images CENTRE GEORGES POMPIDOU + BASILIQUE DU SACRÉ COEUR -->
+
+                <!-- TR de separation -->
+                <div class="col-md-12">
+                    <div class="row monuments-fond">
+                        <div class="monuments-details"><img src="ressources/images/cale.png" height="60"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <!-- FOOTER FOND VERT -->
+            <div class="bg-vert">
+                <div class="container">
+                    <div>
+                        <div class="row">
+
+                        <div class="col-md-3 vert-espace">
+                            <div><h3>Rubriques</h3></div>
+                            <div><p><a href="application-mobile.htm">Application mobile</a>
+                                <br><a href="louvre.htm">Monuments</a>
+                                <br><a href="preparez-votre-visite.htm">Préparez votre visite</a>
+                                <br><a href="programme.htm">Programme</a>
+                                <br><a href="billets.htm">Billets</a>
+                                <br><a href="#">Produits dérivés</a>
+                                <br><a href="press.htm">Espace Presse</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 vert-espace">
+                            <div><h3>Contactez-nous</h3></div>
+                            <div><h6>Organisation</h6>
+                                <p>La ville de Paris</p>
+                                <h6>Coordination Press</h6>
+                                <p><a href="mailto:contactpresse@villedeparis.fr" target="_blank">contactpresse@villedeparis.fr</a>
+                                    <br>
+                                    <br><a href="nous-contacter.htm">> Nous contacter</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 vert-espace">
+                            <div><h3>Nous suivre</h3></div>
+                            <div><a href="https://www.instagram.com/museelouvre/?hl=fr" target="_blank"><img src="ressources/images/footer/suivre-instagram.png" width="10%"></a>
+                                <a href="https://twitter.com/MuseeLouvre?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="ressources/images/footer/suivre-facebook.png" width="10%"></a>
+                                <a href="https://fr-fr.facebook.com/museedulouvre/" target="_blank"><img src="ressources/images/footer/suivre-twitter.png" width="10%"></a></div>
+                            <div><h3 class="titre">Partenaires</h3></div>
+                            <div><img src="ressources/images/footer/logo-RATP.svg" width="15%"><img src="ressources/images/footer/logo-radio-france.png" width="30%"><img src="ressources/images/footer/logo_museum.png" width="20%"></div>
+                            <div><img src="ressources/images/footer/logo-france-tv.png" width="30%"><img src="ressources/images/footer/logo-conseil-de-l-europe.png" width="20%"><img src="ressources/images/footer/logo-paris-musees.png" width="15%"></div>
+                        </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- FOOTER FOND VIOLET -->
+            <!--
+            <div class="footer menu bg-violet">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Crédits</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">La ville de Paris ©</a></li>
+                </ul>
+            </div>
+            -->
+
+            <div class="bg-violet">
+                <div class="container">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div><a href="mentions-legales.htm" class="btn btn-footer">Mentions légales</a> <a href="credits.htm" class="btn btn-footer">Crédits</a> <a href="#" class="btn btn-footer">Plan du site</a></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div><p class="ville-de-paris">La ville de Paris ©</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+         <!-- SCRIPTS -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

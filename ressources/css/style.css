@@ -1,0 +1,472 @@
+/* DOCUMENT INFORMATION
+    - Document: les monuments de Paris en fête !
+    - Version: 1.0.0
+    - Author: Caroline
+*/
+
+/* COLORS
+    - Defaut body text #000000
+    - h1               #9e005d
+    - h2               #9e005d
+    - h3               #9e005d
+
+    - button text            #000000
+    - button background      #d9e021
+    - button:hover           #ffffff
+    - button background:over #9e005d
+*/
+
+/* FONT
+    - Default      Roboto
+    - Title        Muli
+    - figcaption   Tinos
+*/
+
+/* CSS DIRECTORY (sommaire)
+    1. =GLOBAL
+    2. =HEADER
+    3. =BUTTON
+    4. =SECTION
+    5. =FOOTER
+*/
+
+/* ------------ GLOBAL (css de tout le site) ------------ */
+body {
+    background-color: #f7931e;
+}
+
+h1, h2, h6 {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    color: #9e005d;
+}
+
+h5 {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #9e005d;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+figcaption {
+            font-family: 'Tinos', serif;
+            font-style: italic;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*
+section {
+    padding:30px 0px 60px 0px;
+}*/
+
+/* ------------------------ HEADER ------------------------ */
+
+/*
+.container {
+    height:10px;
+}*/
+
+.logo {
+        float: left;
+        padding: 77px;
+}
+
+.row-jaune div {
+            background-color: #fcee21;
+            height:300px;
+            margin: 0 auto;
+}
+
+.row-jaune div h1 {
+    font-size: 60px;
+    font-weight: 900;
+    padding:100px 0px 0px 77px;
+}
+
+.row-jaune div h2 {
+    font-size: 48px;
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #9e005d;
+    text-align: center;
+    padding:3px;
+}
+
+.logo-titre div {margin:10px;}
+
+.logo-titre h1 {text-transform: uppercase;}
+
+.logo-titre h2 {font-style: normal;}
+
+.navbar {height:62px;}
+
+.bg-violet {
+            background-color: #9e005d;
+}
+
+/*
+.row-slide {
+        background-image:url(../images/header/slide-pass-journee.jpg);
+        background-repeat:no-repeat;
+        text-align: center;
+        height:350px;
+}*/
+
+.fond-titre-slide {
+    background-color: #ffffff9f; /* 9f : c'est la transparence sur la couleur */
+    width:1300px;
+    height:70px;
+    margin:0 auto;
+}
+
+.fond-titre-slide h1 {
+    font-size:48px;
+    font-weight:600;
+    /*position: absolute;*/
+}
+
+
+/* ------------------------ BUTTON ------------------------ */
+
+.btn {
+    padding:10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ------- btn-nav ------- */
+.btn-nav {
+        text-decoration:none;
+        color:#ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #9e005d;
+}
+     
+.btn-nav:hover {
+         text-decoration:none;
+         color: #000000;
+         font-size: 14px;
+         text-transform: uppercase;
+         font-weight: 600;
+         background-color:#d9e021;
+}
+
+/* ------- btn-slide ------- */
+.btn-slide {
+    background-color:#d9e021;
+    color:#000000;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 46px;
+    text-decoration:none;
+}
+
+.btn-slide:hover {
+    background-color: #9e005d;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 46px;
+    text-decoration:none;
+}
+
+/* ------- btn-application-mobile ------- */
+.btn-application-mobile {
+    background-color:#d9e021;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    width: 146px;
+    margin: 60px 0px 15px 140px;
+    text-decoration:none;
+}
+
+.btn-application-mobile:hover {
+    background-color: #ffffff;
+    color: #9e005d;
+    font-size: 20px;
+    font-weight: 600;
+    width: 146px;
+    margin: 60px 0px 15px 140px;
+    text-decoration:none;
+}
+
+/* ------- btn-preparez-journee ------- */
+.btn-preparez-journee {
+    background-color:#d9e021;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin : auto;
+    width: 244px;
+    text-decoration:none;
+}
+
+.btn-preparez-journee:hover {
+    background-color: #9e005d;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin : auto;
+    width: 244px;
+    text-decoration:none;
+}
+
+/*
+.btn-preparez-journee a {display: block;
+                         margin : auto;
+}*/
+
+/* ------- btn-decouvrir ------- */
+.btn-decouvrir {
+    background-color:#d9e021;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    width: 151px;
+    text-decoration:none;
+}
+
+.btn-decouvrir:hover {
+    background-color: #9e005d;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 151px;
+    text-decoration:none;
+}
+
+/* ------- btn-footer ------- */
+.btn-footer {
+    background-color: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    text-decoration:none;
+}
+
+.btn-footer:hover {
+    background-color: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    text-decoration:underline;
+}
+
+/* ------------------------ SECTION application mobile ------------------------ */
+
+.appli-mob-fond {background-color: #9e005d;
+                border-radius: 20px;
+                margin: 47px auto 60px auto;
+                padding: 45px 60px 45px 60px;
+                height: 356px;
+}
+
+.appli-mob-fond div {float: left;}
+
+.appli-mob-details h4 {font-size: 20px;
+                       font-weight: 900;
+                       color: #ffffff;
+                       text-transform: uppercase;
+                       margin-top: 10px;
+}
+
+.appli-mob-details h6 {font-size: 19px;
+                        font-weight: 600;
+                         color: #ffffff;
+                         width: 400px;
+}
+
+.appli-mob-details p {font-size: 16px;
+                      font-weight: 200;
+                       color: #ffffff;
+                       width: 400px;
+}
+
+.link {color: #fcee21;}
+ 
+.link:hover {color: #00ffff;}
+
+.appli-mob-details img {margin: 15px 0px 15px 0px;}
+
+.btn-google-apple {margin: 0px 0px 0px 140px;}
+
+/*
+.bloc-violet {
+    background-color: #9e005d;
+    padding: 60px;
+    width:1040px;
+    border-radius: 20px;
+    margin:47px 0px 60px 0px;
+}
+
+
+
+.container {
+    padding:auto;
+    margin: auto;
+}
+*/
+
+
+/* ------------------------ SECTION monuments ------------------------ */
+.monuments-fond {background-color: #ffffff;
+                 width=1000px;
+}
+
+.monuments-details h1 {font-weight: 900;
+                       text-transform: uppercase;
+                       text-align: center;
+                       margin-top: 60px;
+}
+
+.monuments-details h5 {font-weight: 800;
+                       text-align: center;
+                       margin-bottom: 20px;
+                       color: #9e005d;
+}
+
+.txt-chapeau {font-size: 16px;
+              color: #9e005d;
+              font-weight: 600;
+
+}
+
+.txt-chapeau a {font-size: 16px;
+                color: #9e005d;
+                font-weight: 600;
+                text-decoration-line: underline;
+}
+
+.txt-chapeau a:hover {font-size: 16px;
+                    font-weight: 600;
+                    color: #1d6c9a;
+}
+
+.txt-intro-centre {text-align: center;
+                   width: 827px;
+                   margin: 0 auto;
+}
+
+.monuments-details h3 {font-weight: 900;
+                       font-size: 20px;
+                       margin-bottom: 10px;
+                       color: #9e005d;
+                       text-transform: uppercase;
+}
+
+.monuments-details p {font-size: 14px;
+                      margin-bottom: 15px;
+}
+
+.largeur-paragraphe {width: 220px;
+}
+
+/*
+.bloc-blanc {
+    background-color:#ffffff;
+    padding: 60px;
+    width:1040px;
+}
+
+.titre-monument {
+    font-size: 36px;
+    font-weight: 900;
+}
+*/
+
+/* ------------------------ FOOTER ------------------------ */
+/* -----GLOBAL */
+/*footer {
+    text-align:left;
+}*/
+
+footer h3 {text-transform: uppercase;
+    color:#9e005d;
+    font-weight: 800;
+}
+
+footer h6 {font-size: 18px;
+    color:#9e005d;
+    font-weight: 800;
+}
+
+footer a {text-decoration: underline;
+        color:#9e005d;
+}
+
+footer p {color:#9e005d;
+    font-weight: 300;
+}
+
+footer img {margin: 0px 10px 10px 10px;}
+
+
+/* -----FOOTER FOND VERT */
+.bg-vert {
+    background-color:#d9e021;
+    height:330px;
+    padding:40px;
+    margin:0 auto;
+}
+
+.titre {margin-top: 30px;}
+
+.vert-espace {margin-left: 80px;}
+
+/* -----FOOTER FOND VIOLET*/
+.bg-violet {
+    background-color: #9e005d;
+    height:62px;
+    padding:7px;
+    /*margin:0 auto;*/
+}
+
+.ville-de-paris {color:white;
+                font-size:16px;
+                font-weight: 300;
+                padding: 10px;
+                /*margin-left:120px;*/
+                text-align: right;
+}
+
+/*
+.footer menu {text-align: left;}
+
+.footer menu a {
+            color:white;
+            text-decoration:none;
+            font-size:16px;
+}
+
+.footer menu a:hover {
+    text-decoration:none;
+    color: #000000;
+}
+
+footer ul {
+    list-style-type:none;
+    display:inline-flex;
+}
+
+footer li {
+   padding:20px;
+}
+*/
